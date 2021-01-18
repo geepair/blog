@@ -10,7 +10,7 @@ avatar: /images/avatar.jpg
 favicon: /favicon.ico
 
 # For seo
-keywords: Geepair,Java,Java开发,后端开发,spring,springboot
+keywords: geepair,java,java开发,后端开发,spring,springboot
 
 home_nav:
   - name: Blog

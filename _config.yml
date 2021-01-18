@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Geepair's blog
 subtitle: ''
 description: ''
-keywords:
+keywords: 
 author: geepair
 language: zh-hans
 timezone: 'UTC'
