@@ -4,10 +4,10 @@ slogan: Study hard, study forever
 url: https://beet.tk
 
 # Set avatar (Absolute url and relative url)
-avatar: /images/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/geepair/blog@latest/themes/fexo/source/images/avatar.jpg
 
 # Set favicon
-favicon: /favicon.ico
+favicon: https://cdn.jsdelivr.net/gh/geepair/blog@latest/themes/fexo/source/favicon.ico
 
 # For seo
 keywords: geepair,java,java开发,后端开发,spring,springboot
