@@ -202,6 +202,7 @@ about:
     icon: icon-mail
     text_key: NeteaseMail
     text_value: "geepair@163.com"
+    text_value_url: "mailto:geepair@163.com"
   - type: location
     icon: icon-location
     text_value: JiangXi
