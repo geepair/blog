@@ -7,7 +7,7 @@ url: https://beet.tk
 avatar: https://cdn.jsdelivr.net/gh/geepair/blog@latest/themes/fexo/source/images/avatar.jpg
 
 # Set favicon
-favicon: https://cdn.jsdelivr.net/gh/geepair/blog@latest/themes/fexo/source/favicon.ico
+favicon: /favicon.ico
 
 # For seo
 keywords: geepair,java,java开发,后端开发,spring,springboot
