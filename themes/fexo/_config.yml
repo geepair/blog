@@ -81,7 +81,7 @@ backtop:
   about: false
 
 donation:
-  show: true
+  show: false
   btn_text: 支持一下
   tip: 扫一扫，支持Geepair
   items:
@@ -97,7 +97,7 @@ post:
   showToc: true # true|false
   showComments: true
   open_in_new_window: false
-  show_prev_next: true
+  show_prev_next: false
 
 rss: /atom.xml
 
