@@ -4,11 +4,11 @@
 
 # Site
 title: Geepair's blog
-subtitle: ''
-description: ''
-keywords: 
+subtitle: 'Study hard, study forever'
+description: 'Study hard, study forever, geepair,java,java开发,后端开发,spring,springboot'
+keywords: geepair,java,java开发,后端开发,spring,springboot
 author: geepair
-language: zh-hans
+language: zh-CN
 timezone: 'UTC'
 
 # URL
@@ -45,7 +45,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
