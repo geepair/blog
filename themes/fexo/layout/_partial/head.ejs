@@ -34,6 +34,8 @@
   <% } else { %>
     <meta name="keywords" content="<%= theme.keywords %>" />
   <% } %>
+  <% if(theme.baidu_verification) { %>
+  <meta name="baidu-site-verification" content="<%- theme.baidu_verification %>" /> <% } %>
 
   <%- open_graph() %>
 
