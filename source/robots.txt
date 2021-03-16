@@ -6,4 +6,5 @@ Allow: /tags/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
+Sitemap: https://beet.tk/sitemap.xml
 Sitemap: https://beet.tk/baidusitemap.xml
