@@ -26,9 +26,7 @@
 function postsToArray(pagePosts) {
   var postsArr = []
   pagePosts.each(function (post) {
-    if(!post.enable || post.enable==true) {
-      postsArr.push(post);
-    }
+    postsArr.push(post);
   });
   return postsArr;
 }
@@ -94,7 +92,9 @@ function getPostListsDom(posts) {
 
   posts.forEach(function (post) {
     var patialPath = post.isYear ? '_partial/component/item-year' : '_partial/component/item-post';
-    dom += partial(patialPath, {post: post});
+    if(post.enable && post.enable==false) {
+      dom += partial(patialPath, {post: post});
+    }
   });
 
   dom += '</ul>';
