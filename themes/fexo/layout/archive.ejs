@@ -92,7 +92,7 @@ function getPostListsDom(posts) {
 
   posts.forEach(function (post) {
     var patialPath = post.isYear ? '_partial/component/item-year' : '_partial/component/item-post';
-    if(post.enable && post.enable==false) {
+    if(post.enable!=false) {
       dom += partial(patialPath, {post: post});
     }
   });
