@@ -26,7 +26,9 @@
 function postsToArray(pagePosts) {
   var postsArr = []
   pagePosts.each(function (post) {
-    postsArr.push(post);
+    if(!post.enable || post.enable==true) {
+      postsArr.push(post);
+    }
   });
   return postsArr;
 }
