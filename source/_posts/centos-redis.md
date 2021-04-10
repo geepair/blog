@@ -6,7 +6,7 @@ tags:
   - Redis
   - CentOS
 author: geepair
-date: 2020-03-14 19:05:00
+date: 2019-03-14 19:05:00
 ---
 
 在Centos上安装Redis服务端，并使用客户端连接

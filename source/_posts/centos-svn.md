@@ -6,7 +6,7 @@ tags:
   - SVN
   - CentOS
 author: geepair
-date: 2020-03-14 19:08:00
+date: 2019-03-14 19:08:00
 ---
 
 在Liunx上搭建SVN服务端来进行客户端的连接，进行多人协作，版本控制的功能。

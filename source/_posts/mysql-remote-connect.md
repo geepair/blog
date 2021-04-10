@@ -6,7 +6,7 @@ tags:
   - Linux
   - MySQL
 author: geepair
-date: 2020-03-14 15:56:00
+date: 2019-03-14 15:56:00
 ---
 
 linux上开启一个新的临时账户用来远程连接Mysql，使用3306端口
