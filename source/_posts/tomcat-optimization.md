@@ -1,5 +1,5 @@
 ---
-title: web.xml配置
+title: tomcat web.xml配置
 categories:
   - 后端
 tags:
@@ -83,7 +83,5 @@ date: 2021-01-29 18:44:00
     
     
 </web-app>
-
-
 ```
 
