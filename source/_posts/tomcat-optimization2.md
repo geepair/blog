@@ -81,7 +81,8 @@ date: 2021-01-29 19:05:00
                   unpackWARS="true" autoDeploy="true">
                 <!-- 日志 -->
                 <Valve className="org.apache.catalina.valves.AccessLogValve"
-                       directory="logs"prefix="localhost_access_log"
+                       directory="logs"
+                       prefix="localhost_access_log"
                        suffix=".txt"
                        pattern="%h %l %u %t &quot;%r&quot; %s %b" />
             </Host>
