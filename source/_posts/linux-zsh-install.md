@@ -51,3 +51,6 @@ date: 2021-06-22 21:47:00
   ```shell
   source ~/.zshrc
   ```
+  
+
+![](https://cdn.jsdelivr.net/gh/geepair/picgo@master/img/2021/06/22/20210622215602.png)
