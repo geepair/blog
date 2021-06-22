@@ -13,7 +13,7 @@ date: 2021-06-22 21:47:00
 
 - 安装`zsh`，使用自带的包管理工具
 
-  ```shell
+  ```bash
   apt install zsh # for Ubuntu
   yum install zsh  # for CentOS，dnf replace yum also
   brew install zsh # MacOS
@@ -21,13 +21,13 @@ date: 2021-06-22 21:47:00
 
 - 安装`on-my-zsh`，克隆oh-my-zsh仓库或者使用安装脚本
 
-  ```shell
+  ```bash
   wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
   ```
 
 - 配置`zsh`，修改主题以及添加插件`zsh-syntax-highlighting`，`zsh-autosuggestions`
 
-  ```shell
+  ```bash
   vim ~/.zshrc # root 
   ZSH_THEME="robbyrussell" # change, like "ys"
   plugins=(git zsh-syntax-highlighting zsh-autosuggestions) # search plugins and add
@@ -36,19 +36,19 @@ date: 2021-06-22 21:47:00
 
   1. 安装插件[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-     ```shell
+     ```bash
      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
      ```
 
   2. 安装插件[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-     ```shell
+     ```bash
      git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
      ```
 
 - 刷新zsh配置，配置完成
 
-  ```shell
+  ```bash
   source ~/.zshrc
   ```
   

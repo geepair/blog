@@ -7,7 +7,7 @@ tags:
   - Java
   - Tool
 author: geepair
-date: 2021-01-29 18:44:00
+date: 2021-06-22 22:55:00
 ---
 
  Linux刚安装时一般不自带JDK或者是自带了开源的OpenJDK，自己使用的一般替换为OracleJDK，需要把自带的`OpenJDK`卸载，再安装上`OracleJDK`
@@ -16,7 +16,7 @@ date: 2021-01-29 18:44:00
 
   1.查看已经安装的OpenJDK版本
 
-  ```shell
+  ```bash
   java -version # dispaly version
   ```
 
@@ -24,7 +24,7 @@ date: 2021-01-29 18:44:00
 
   2.查看本机已经安装的有关java的包，可以选择卸载
 
-  ```shell
+  ```bash
   rpm -qa | grep java # query java package
   ```
 
@@ -32,7 +32,7 @@ date: 2021-01-29 18:44:00
 
   使用`rpm -e `卸载包，以noarch结尾的可以不删除，再次使用`java -version`此时就失效了
 
-  ```shell
+  ```bash
   rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el8_4.x86_64 # rpm
   yum -y remove *openjdk* # yum
   ```
@@ -45,7 +45,7 @@ date: 2021-01-29 18:44:00
 
   2.解压下载好的压缩包，创建Java文件夹复制过去，配置好环境变量
 
-  ```shell
+  ```bash
   tar -zxvf jdk-8u291-linux-x64.tar.gz # tar
   mkdir -p /usr/local/java
   cp -r jdk1.8.0_291/* /usr/local/java
