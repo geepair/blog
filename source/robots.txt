@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Sitemap: https://beet.tk/sitemap.xml
+Sitemap: https://beet.tk/baidusitemap.xml
