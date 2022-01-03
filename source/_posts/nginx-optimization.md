@@ -16,7 +16,7 @@ nginx配置文件优化详解
 
 ## nginx.conf文件
 
-``` conf
+```bash
 #user  nobody;
 worker_processes  auto; # cpu核心数
 worker_cpu_affinity auto; # 0001 0010 0100 1000 散列
@@ -167,7 +167,7 @@ http {
 ```
 
 ## sysctl.conf文件
-```property
+```bash
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 
