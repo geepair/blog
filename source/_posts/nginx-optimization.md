@@ -85,14 +85,14 @@ http {
 
     # 上游服务，可做负载均衡
     upstream pi {
-	      server 127.0.0.1:9090;
+        server 127.0.0.1:9090;
     }
     
     # 重定向80->443
     server {
-	      listen 80;
+        listen 80;
         server_name ijava.me www.ijava.me pi.ijava.me;
-	      resolver 114.114.114.114;
+        resolver 114.114.114.114;
         return 301 https://$host$request_uri;
     }
 
@@ -104,11 +104,11 @@ http {
         ssl_certificate_key  ijava_me.key;
         ssl_session_cache    shared:SSL:10m;
         ssl_session_timeout  1d;
-	      ssl_session_tickets off;
-	      ssl_protocols TLSv1.1 TLSv1.2;
+        ssl_session_tickets off;
+        ssl_protocols TLSv1.1 TLSv1.2;
         ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
         ssl_prefer_server_ciphers  off;
-	      #ssl_stapling on;
+        #ssl_stapling on;
         #ssl_stapling_verify on;
 
         resolver 114.114.114.114;
@@ -116,23 +116,23 @@ http {
         location / {
             root   /home/pi/html;
             index  index.html index.htm;
-	          charset utf-8;
+            charset utf-8;
         }
         # 连接数状态统计module
         location /status {
-	        stub_status on;
-	      }
+            stub_status on;
+        }
     }
     
     server {
-	      listen 443 ssl http2;
+        listen 443 ssl http2;
         server_name pi.ijava.me;
-	      resolver 114.114.114.114;
+        resolver 114.114.114.114;
         # 反向代理
         location / {
             proxy_pass http://pi;
             proxy_set_header X-Forwared-For $proxy_add_x_forwarded_for;
-                  proxy_set_header Host $host;
+            proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_redirect off;
         }
@@ -167,6 +167,7 @@ http {
 ```
 
 ## sysctl.conf文件
+
 ```bash
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
